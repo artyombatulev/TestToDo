@@ -6,6 +6,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using ToDo.Models;
 using ToDoBusinessLogic.DTO;
 using ToDoBusinessLogic.Interfaces;
@@ -17,13 +18,15 @@ namespace ToDo.Controllers
     [ApiController]
     public class TodoController : ControllerBase
     {
+        private readonly ILogger<TodoController> _logger;
         ITodoService todoService;
 
-        public TodoController(ITodoService todoserv)
+        public TodoController(ITodoService todoserv, ILogger<TodoController> logger)
         {
             todoService = todoserv;
+            _logger = logger;
         }
-        
+
         [HttpGet]
         //[Route("/all")]
         public IEnumerable<TodoViewModel> GetAllTodos()
@@ -31,7 +34,7 @@ namespace ToDo.Controllers
             IEnumerable<TodoDTO> todoDtos = todoService.GetTodos();
             var mapper = new MapperConfiguration(cfg => cfg.CreateMap<TodoDTO, TodoViewModel>()).CreateMapper();
             var todos = mapper.Map<IEnumerable<TodoDTO>, List<TodoViewModel>>(todoDtos);
-
+            _logger.LogInformation("GetAllTodosRequest");
             return todos;
         }
 

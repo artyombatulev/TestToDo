@@ -3114,11 +3114,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\TestToDo\\ToDo\\ToDoBusinessLogic\\ToDoBusinessLogic.csproj",
+      "projectUniqueName": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDoBusinessLogic.csproj",
       "projectName": "ToDoBusinessLogic",
-      "projectPath": "E:\\TestToDo\\ToDo\\ToDoBusinessLogic\\ToDoBusinessLogic.csproj",
+      "projectPath": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDoBusinessLogic.csproj",
       "packagesPath": "C:\\Users\\artyo\\.nuget\\packages\\",
-      "outputPath": "E:\\TestToDo\\ToDo\\ToDoBusinessLogic\\obj\\",
+      "outputPath": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3137,8 +3137,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "E:\\TestToDo\\ToDo\\ToDoPersistence\\ToDoPersistence.csproj": {
-              "projectPath": "E:\\TestToDo\\ToDo\\ToDoPersistence\\ToDoPersistence.csproj"
+            "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDoPersistence.csproj": {
+              "projectPath": "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDoPersistence.csproj"
             }
           }
         }

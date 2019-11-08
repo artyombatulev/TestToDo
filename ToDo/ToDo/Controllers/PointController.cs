@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using ToDo.Models;
 using ToDoBusinessLogic.DTO;
 using ToDoBusinessLogic.Interfaces;
@@ -15,13 +16,15 @@ namespace ToDo.Controllers
     [ApiController]
     public class PointController : ControllerBase
     {
+        private readonly ILogger<PointController> _logger;
         ITodoService todoService;
         ITodoPointService pointService;
 
-        public PointController(ITodoService todoserv,ITodoPointService pointserv)
+        public PointController(ITodoService todoserv,ITodoPointService pointserv, ILogger<PointController> logger)
         {
             todoService = todoserv;
             pointService = pointserv;
+            _logger = logger;
         }
 
        // [Route("api/point/todo/")]

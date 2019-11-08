@@ -20,3 +20,14 @@ E:\TestToDo\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDoBusinessLogic.Ass
 E:\TestToDo\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDoBusinessLogic.csproj.CopyComplete
 E:\TestToDo\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDoBusinessLogic.dll
 E:\TestToDo\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDoBusinessLogic.pdb
+E:\ToDoTest\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDoBusinessLogic.deps.json
+E:\ToDoTest\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDoBusinessLogic.dll
+E:\ToDoTest\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDoBusinessLogic.pdb
+E:\ToDoTest\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDoPersistence.dll
+E:\ToDoTest\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDoPersistence.pdb
+E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDoBusinessLogic.csprojAssemblyReference.cache
+E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDoBusinessLogic.AssemblyInfoInputs.cache
+E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDoBusinessLogic.AssemblyInfo.cs
+E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDoBusinessLogic.csproj.CopyComplete
+E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDoBusinessLogic.dll
+E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDoBusinessLogic.pdb
