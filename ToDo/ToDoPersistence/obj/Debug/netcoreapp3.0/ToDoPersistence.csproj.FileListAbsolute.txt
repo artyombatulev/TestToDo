@@ -1,0 +1,5 @@
+E:\ToDo\ToDoPersistence\bin\Debug\netcoreapp3.0\ToDoPersistence.deps.json
+E:\ToDo\ToDoPersistence\bin\Debug\netcoreapp3.0\ToDoPersistence.dll
+E:\ToDo\ToDoPersistence\obj\Debug\netcoreapp3.0\ToDoPersistence.csprojAssemblyReference.cache
+E:\ToDo\ToDoPersistence\obj\Debug\netcoreapp3.0\ToDoPersistence.AssemblyInfoInputs.cache
+E:\ToDo\ToDoPersistence\obj\Debug\netcoreapp3.0\ToDoPersistence.AssemblyInfo.cs
