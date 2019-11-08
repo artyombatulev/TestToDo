@@ -1,0 +1,79 @@
+<div *ngIf="tableMode; else create" class="todo_table">
+  <!--<input type="button" value="Add" class="btn btn-default" (click)="add()" />-->
+  <button mat-button class="create_todo_icon text_btn" (click)="add()"><mat-icon class="btn_box">add_box</mat-icon> Create ToDo</button>
+  <table class="table table-striped">
+    <thead class="table_header">
+      <tr>
+        <td class="title">Title</td>
+        <td>Date</td>
+        <td>Completed?</td>
+        <td>Actions</td>
+        <td></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of todos">
+        <ng-template [ngIf]="todo?.todoId != t.todoId" [ngIfElse]="edit">
+          <td (click)="gotoPoints(t.todoId)" class="todo_title">{{t?.title}}</td>
+          <!--<td><a [routerLink]="['/point/', t.todoId]">{{ t?.title }}</a></td>-->
+          <td>{{changeDateFormat(t?.creationDate)}}</td>
+          <td>
+            <mat-icon *ngIf="t?.completed != true" class="check_false_icon" aria-hidden="false" aria-label="check_false_icon">check_box_outline_blank</mat-icon>
+            <mat-icon *ngIf="t?.completed != false" class="check_true_icon" aria-hidden="false" aria-label="check_true_icon">check_box</mat-icon>
+          </td>
+          <td>
+            <mat-icon class="add_icon mat_icon" aria-hidden="false" aria-label="add_icon" (click)="gotoPoints(t.todoId)" title="Add Point">add</mat-icon>
+            <mat-icon class="edit_icon mat_icon" aria-hidden="false" aria-label="edit_icon" (click)="editTodo(t)" title="Edit ToDo">edit</mat-icon>
+            <mat-icon class="delete_icon mat_icon" aria-hidden="false" aria-label="delete_icon" (click)="delete(t)" title="Delete ToDo">delete</mat-icon>
+
+          </td>
+        </ng-template>
+      </tr>
+    </tbody>
+  </table>
+
+  <div>
+    <button class="btn btn-secondary fltr_todo" (click)="filterlist('All')"> All </button>
+    <button class="btn btn-secondary bt fltr_todo" (click)="filterlist('Active')">Active</button>
+    <button class="btn btn-secondary bt fltr_todo" (click)="filterlist('Completed')"> Completed </button>
+  </div>
+  <hr>
+  <div class="delete_all">
+    <button class="delete_all_btn " (click)="DeleteALLTodos()"> Clear All <mat-icon class="btn_box">delete_sweep</mat-icon></button>
+  </div>
+</div>
+
+<!---->
+<ng-template #edit>
+  <td class="title">
+    <input type="text" [(ngModel)]="todo.title" class="form-control title" required />
+  </td>
+  <td>
+    <input type="text" [(ngModel)]="todo.creationDate" class="form-control" disabled />
+  </td>
+  <td>
+    <mat-icon *ngIf="todo.completed != true" class="check_false_icon" aria-hidden="false" aria-label="check_false_icon">check_box_outline_blank</mat-icon>
+    <mat-icon *ngIf="todo.completed != false" class="check_true_icon" aria-hidden="false" aria-label="check_true_icon">check_box</mat-icon>
+  </td>
+  <td>
+    <mat-icon class="save_icon mat_icon" aria-hidden="false" aria-label="save_icon" (click)="save()" title="Save changes">save</mat-icon>
+    <mat-icon class="cancel_icon mat_icon" aria-hidden="false" aria-label="cancel_icon" (click)="cancel()" title="Cancel">cancel</mat-icon>
+  </td>
+</ng-template>
+
+<!---->
+<ng-template #create>
+  <div class="col-md-6">
+    <div class="form-group">
+      <input type="text" id="title" [(ngModel)]="todo.title" class="form-control" required>
+      <label class="form-control-placeholder" for="title">Title</label>
+    </div>
+  </div>
+  <div>
+    <button mat-button class="save_todo_icon text_btn" (click)="save()"><mat-icon class="btn_box">create</mat-icon> Create </button>
+    <button mat-button class="cancel_todo_icon text_btn" (click)="cancel()"><mat-icon class="btn_box">cancel</mat-icon> Cancel</button>
+  </div>
+</ng-template>
+
+
+    

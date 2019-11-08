@@ -1,0 +1,180 @@
+.delete_icon {
+  cursor: pointer;
+}
+
+.edit_icon {
+  cursor: pointer;
+}
+
+.add_icon {
+  cursor: pointer;
+}
+
+.create_todo_icon {
+  margin-top: 0;
+  background: transparent;
+  color: currentColor;
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 88px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-radius: 2px;
+}
+
+.btn_box {
+  top: 5px;
+  position: relative;
+}
+
+.save_icon {
+  cursor: pointer;
+}
+
+.cancel_icon {
+  cursor: pointer;
+}
+
+.todo_title {
+  cursor: pointer;
+}
+
+  .todo_title:hover {
+    text-decoration: underline;
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+  }
+
+.table_header {
+  font-weight: bold
+}
+
+.cancel_todo_icon {
+  margin-top: 0;
+  background: transparent;
+  color: currentColor;
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 88px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-radius: 2px;
+}
+
+.save_todo_icon {
+  margin-top: 0;
+  background: transparent;
+  color: currentColor;
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 88px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-radius: 2px;
+}
+
+.text_btn:hover {
+  background: rgba(0,0,0,0);
+  color: #3a7999;
+}
+
+.mat_icon:hover {
+  color: #3a7999;
+}
+
+.fltr_todo:hover {
+  border-color: transparent;
+  background: #D5E5E5;
+  color: #3a7999;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.delete_all_btn {
+  border-radius: 4px;
+  background-color: #222c2c;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  padding: 4px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 18px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+  .delete_all_btn:hover {
+    background: #d02929;
+    color: #3a7999;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+.description {
+  width: 500px;
+}
+.date_colymn {
+  width: 250px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+
+.col-md-6, .point_table {
+  margin-top: 3%;
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"todopoint.model.js","sourceRoot":"","sources":["todopoint.model.ts"],"names":[],"mappings":";;AAAA;IACI,mBACW,OAAgB,EAChB,WAAoB,EACpB,WAAqB,EACrB,gBAAuB,EACvB,MAAe;QAJf,YAAO,GAAP,OAAO,CAAS;QAChB,gBAAW,GAAX,WAAW,CAAS;QACpB,gBAAW,GAAX,WAAW,CAAU;QACrB,qBAAgB,GAAhB,gBAAgB,CAAO;QACvB,WAAM,GAAN,MAAM,CAAS;IACtB,CAAC;IACT,gBAAC;AAAD,CAAC,AARD,IAQC;AARY,8BAAS"}
