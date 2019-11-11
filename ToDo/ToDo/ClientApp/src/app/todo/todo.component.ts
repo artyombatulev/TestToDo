@@ -17,12 +17,10 @@ import { ToastrService } from 'ngx-toastr';
 export class TodoComponent implements OnInit {
 
 
-    todo: Todo = new Todo();   // изменяемый товар
-    todos: Todo[];                // массив товаров
-    tableMode: boolean = true;          // табличный режим
-    editedTodo: Todo = new Todo();
+    todo: Todo = new Todo();   
+    todos: Todo[];                
+    tableMode: boolean = true;          
     filtre: string = "All"
-    editMode: boolean = false;
 
     constructor(private todoService: TodoService,
         private router: Router,
@@ -31,12 +29,12 @@ export class TodoComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.loadTodos(this.filtre);    // загрузка данных при старте компонента  
+        this.loadTodos(this.filtre);    
     }
-    // получаем данные через сервис
     loadTodos(f) {
         //this.todoService.getTodos()
         //.subscribe((data: Todo[]) => this.todos = data);
+
         this.todoService.getTodos().toPromise().then(res => {
             this.todos = res as Todo[]
             this.filterTodos(this.filtre)
@@ -44,23 +42,36 @@ export class TodoComponent implements OnInit {
 
 
     }
-    // сохранение данных
+
     save() {
         if (this.todo.title == '' || this.todo.title == undefined) {
             this.toastr.error('Title field must be filled', 'Verify Your Form');
         }
         else {
-        if (this.todo.todoId == null) {
-            this.todoService.createTodo(this.todo)
-                .subscribe((data: Todo) => this.todos.push(data));
-            this.toastr.success('Todo Was Added Successfully', 'Todo Adding');
-        } else {
-            this.todoService.updateTodo(this.todo)
-                .subscribe(data => this.loadTodos(this.filtre));
-            this.toastr.info('ToDo Was Updated successfully', 'ToDo Updating');
+
+            if (this.todo.todoId == null) {
+                this.todoService.createTodo(this.todo)
+                    .subscribe((data: Todo) => {
+                        this.todos.push(data)
+                        this.toastr.success('Todo Was Added Successfully', 'Todo Adding')
+                        this.loadTodos(this.filtre)
+                        this.cancel()
+                    },() => {
+                        })
+            }
+            else {
+                this.todoService.updateTodo(this.todo)
+                    .subscribe(data => {
+                        this.toastr.info('ToDo Was Updated successfully', 'ToDo Updating')
+                        this.loadTodos(this.filtre)
+                        this.cancel()
+                    }, err => {
+                        console.log(err)
+                    }
+                    )
+            }
         }
-            this.cancel();
-        }
+        
     }
 
     create() {
@@ -70,27 +81,37 @@ export class TodoComponent implements OnInit {
 
     editTodo(t: Todo) {
         this.todo = t;
-        this.editedTodo = t;
-        this.editMode = true;
     }
 
     cancel() {
         this.todo = new Todo();
         this.tableMode = true;
-        this.editMode = false;
+        this.loadTodos(this.filtre);
     }
 
     delete(t: Todo) {
-        const ans = confirm('Do you want to delete this ToDo?');
-        if (ans) {
         this.todoService.deleteTodo(t.todoId)
-            .subscribe(data => this.loadTodos(this.filtre));
-            this.toastr.info('Todo Was Deleted successfully', 'Todo Deleting');
-        }
+            .subscribe(
+                data => {
+                    this.loadTodos(this.filtre)
+                    this.toastr.info('Todo Was Deleted successfully', 'Todo Deleting')
+                }, err => {
+                    console.log(err)
+                }
+            );
+
     }
 
-    DeleteALLTodos() {
-        this.todoService.deleteAllTodos();
+    deleteAllTodos() {
+        this.todoService.deleteAllTodos()
+            .subscribe(
+            data => {
+                this.loadTodos(this.filtre)
+                this.toastr.info('All Todos Was Deleted successfully', 'Todos Deleting')
+            }, err => {
+                console.log(err)
+            }
+        );
     }
 
     add() {

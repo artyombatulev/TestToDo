@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using ToDoBusinessLogic.DTO;
 using ToDoBusinessLogic.Infrastructure;
 using ToDoBusinessLogic.Interfaces;
@@ -14,63 +16,87 @@ namespace ToDoBusinessLogic.Services
     public class TodoService : ITodoService
     {
         IUnitOfWork Database { get; set; }
+        private readonly IMapper _mapper;
 
-        public TodoService(IUnitOfWork uow)
+        public TodoService(IUnitOfWork uow, IMapper mapper)
         {
             Database = uow;
+            _mapper = mapper;
         }
-        public IEnumerable<TodoDTO> GetTodos()
+        public async Task<IEnumerable<TodoDTO>> GetTodos()
         {
-            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<Todo, TodoDTO>()).CreateMapper();
-            return mapper.Map<IEnumerable<Todo>, List<TodoDTO>>(Database.Todos.GetAll());
+            var todos = await Database.TodoRep.GetAllTodosAsync();
+            return _mapper.Map< IEnumerable < TodoDTO >>(todos);
         }
 
-        public TodoDTO GetTodo(int? id)
+        public async Task<TodoDTO> GetTodo(int? id)
         {
             if (id == null)
                 throw new ValidationException("Not found Todo Id", "");
-            var todo = Database.Todos.Get(id.Value);
+            var todo = await Database.TodoRep.GetTodoByIdAsync(id.Value);
             if (todo == null)
                 throw new ValidationException("Todo not found", "");
 
-            return new TodoDTO { TodoId = todo.TodoId, Title = todo.Title, CreationDate = todo.CreationDate, Completed = todo.Completed };
+            return _mapper.Map<TodoDTO>(todo);
+        }
+
+        public async Task<TodoDTO> GetTodoWithPoints(int? id)
+        {
+            var todo = await Database.TodoRep.GetTodoWithDetailsAsync(id.Value);
+
+            int countPoints = todo.Points.Count;
+            int countCompletedPoints = todo.Points.Count(x => x.IsCompleted == true);
+            if (countCompletedPoints == countPoints)
+            {
+                if (todo.Completed != true)
+                {
+                    todo.Completed = true;
+                    Database.TodoRep.UpdateTodo(todo);
+                    await Database.Save();
+                }
+            }
+            else
+            {
+                if (todo.Completed != false)
+                {
+                    todo.Completed = false;
+                    Database.TodoRep.UpdateTodo(todo);
+                    await Database.Save();
+                }
+            }
+
+            return _mapper.Map<TodoDTO>(todo);
         }
 
         public void AddTodo(TodoDTO todoDto)
         {
-            var todo = new Todo { TodoId = todoDto.TodoId, Title = todoDto.Title, CreationDate = todoDto.CreationDate ?? DateTime.Now, Completed = todoDto.Completed };
-            Database.Todos.Create(todo);
+            var todo = _mapper.Map<Todo>(todoDto);
+            Database.TodoRep.CreateTodo(todo);
             Database.Save();
         }
 
         public void EditTodo(TodoDTO todoDto)
         {
-            var todo = new Todo { TodoId = todoDto.TodoId, Title = todoDto.Title, CreationDate = todoDto.CreationDate ?? DateTime.Now, Completed = todoDto.Completed };
-
-            Database.Todos.Update(todo);
+            var todo = _mapper.Map<Todo>(todoDto);
+            Database.TodoRep.UpdateTodo(todo);
             Database.Save();
 
         }
 
-        public void DeleteTodo(int? id)
+        public void DeleteTodo(TodoDTO todoDto)
         {
-            var todo = Database.Todos.Get(id.Value);
-            Database.Todos.Delete(todo);
+            //var todo = Database.TodoRep.GetTodoByIdAsync(id.Value);
+            Database.TodoRep.DeleteTodo(_mapper.Map<Todo>(todoDto));
             Database.Save();
         }
 
         public void DeleteAllTodos()
-        {/*
-            IEnumerable<TodoDTO> todoDtos = GetTodos();
-            foreach(TodoDTO i in todoDtos)
-            {
-                var todo = new Todo { TodoId = i.TodoId, Title = i.Title, CreationDate = i.CreationDate ?? DateTime.Now, Completed = i.Completed };
-                Database.Todos.Delete(todo.TodoId);
-            }*/
+        {
             Todo todo = new Todo();
-            Database.Todos.DeleteAll(todo);
+            Database.TodoRep.DeleteAllTodos(todo);
             Database.Save();
         }
+
         public void Dispose()
         {
             Database.Dispose();

@@ -16,10 +16,11 @@ namespace ToDoPersistence.Entities
         [Required]
         [Column(TypeName = "datetime2(7)")]
         public DateTime CreationDate { get; set; }
-        //[Required]
-        public ICollection<TodoPoint> Point { get; set; }
         [Required]
         [Column(TypeName = "bit")]
         public bool Completed { get; set; } = false;
+
+
+        public ICollection<TodoPoint> Points { get; set; }
     }
 }

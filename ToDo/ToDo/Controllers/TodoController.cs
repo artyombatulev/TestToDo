@@ -19,80 +19,159 @@ namespace ToDo.Controllers
     public class TodoController : ControllerBase
     {
         private readonly ILogger<TodoController> _logger;
+        private readonly IMapper _mapper;
         ITodoService todoService;
 
-        public TodoController(ITodoService todoserv, ILogger<TodoController> logger)
+        public TodoController(ITodoService todoserv, ILogger<TodoController> logger, IMapper mapper)
         {
             todoService = todoserv;
             _logger = logger;
+            _mapper = mapper;
         }
 
         [HttpGet]
-        //[Route("/all")]
-        public IEnumerable<TodoViewModel> GetAllTodos()
+        public async Task<IEnumerable<TodoViewModel>> GetAllTodos()
         {
-            IEnumerable<TodoDTO> todoDtos = todoService.GetTodos();
-            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<TodoDTO, TodoViewModel>()).CreateMapper();
-            var todos = mapper.Map<IEnumerable<TodoDTO>, List<TodoViewModel>>(todoDtos);
-            _logger.LogInformation("GetAllTodosRequest");
-            return todos;
+
+            var todoDtos = await todoService.GetTodos();
+            _logger.LogInformation($"Returned all todos from database.");
+
+            return _mapper.Map<IEnumerable<TodoViewModel>>(todoDtos);
         }
 
         [HttpGet("{id}")]
-        public TodoViewModel GetTodoById(int id)
+        public async Task<ActionResult<TodoViewModel>> GetTodoById(int id)
         {
-            TodoDTO todoDto = todoService.GetTodo(id);
-            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<TodoDTO, TodoViewModel>()).CreateMapper();
-            var todo = mapper.Map<TodoDTO, TodoViewModel>(todoDto);
 
-            return todo;
-        }
-
-        [HttpPost]
-        public IActionResult Post([FromBody]TodoViewModel todoModel)
-        {
-            if (ModelState.IsValid)
+            try
             {
-                var todoDto = new TodoDTO { TodoId = todoModel.TodoId, Title = todoModel.Title, Completed = todoModel.Completed, CreationDate = todoModel.CreationDate };
-                
-                todoService.AddTodo(todoDto);
-                
-                return Ok(todoModel);
+                var todo = await todoService.GetTodo(id);
+                if (todo == null)
+                {
+                    _logger.LogError($"Todo with id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
+                else
+                {
+                    _logger.LogInformation($"Returned todo with id: {id}");
 
-                
+                    var todoResult = _mapper.Map<TodoViewModel>(todo);
+                    return todoResult;
+                }
             }
-            return BadRequest(ModelState);
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside GetTodoById action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+        [HttpPost]
+        public ActionResult<TodoViewModel> PostTodo([FromBody]TodoViewModel todoModel)
+        {
+            try
+            {
+                if (todoModel == null)
+                {
+                    _logger.LogError("Todo object sent from client is null.");
+                    return BadRequest("Todo object is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Invalid todo object sent from client.");
+                    return BadRequest("Invalid model object");
+                }
+                todoModel.Completed = false;
+                todoModel.CreationDate = DateTime.Now;
+
+                var todoEntity = _mapper.Map<TodoDTO>(todoModel);
+
+                todoService.AddTodo(todoEntity);
+
+                return CreatedAtAction("GetTodoById", new { id = todoEntity.TodoId }, todoEntity);
+                //return Ok(todoModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside PostTodo action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody]TodoViewModel todoModel)
+        public async Task<IActionResult> PutTodo(int id, [FromBody]TodoViewModel todoModel)
         {
-            if (ModelState.IsValid)
+            try
             {
-                var todoDto = new TodoDTO { TodoId = todoModel.TodoId, Title = todoModel.Title, Completed = todoModel.Completed, CreationDate = todoModel.CreationDate };
-                todoService.EditTodo(todoDto);
-                return Ok(todoModel);
+                if (todoModel == null)
+                {
+                    _logger.LogError("Todo object sent from client is null.");
+                    return BadRequest("Todo object is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Invalid todo object sent from client.");
+                    return BadRequest("Invalid model object");
+                }
+
+                var todoEntity = await todoService.GetTodo(id);
+                if (todoEntity == null)
+                {
+                    _logger.LogError($"Todo with id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
+
+                todoService.EditTodo(_mapper.Map<TodoDTO>(todoModel));
+
+                return NoContent();
             }
-            return BadRequest(ModelState);
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside PutTodo action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
         }
         
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<ActionResult<TodoViewModel>> DeleteTodo(int id)
         {
-            TodoDTO todoDto = todoService.GetTodo(id);
-            if (todoDto != null)
+            try
             {
-                todoService.DeleteTodo(id);
+                var todo = await todoService.GetTodo(id);
+                if (todo == null)
+                {
+                    _logger.LogError($"Todo with id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
 
+                todoService.DeleteTodo(todo);
+
+                //return NoContent();
+                return _mapper.Map<TodoViewModel>(todo);
             }
-            return Ok(todoDto);
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside DeleteTodo action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
         }
-        /*
+
         //[Route("/deleteall")]
-        [HttpDelete("{id}")]
-        public void DeleteAllTodos(int id)
-        {   
-            todoService.DeleteAllTodos();
-        }*/
+        [HttpDelete]
+        public IActionResult DeleteAllTodos()
+        {
+            try
+            {
+                todoService.DeleteAllTodos();
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside DeleteAllTodos action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
     }
 }

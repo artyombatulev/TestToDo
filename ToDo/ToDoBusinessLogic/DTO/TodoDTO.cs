@@ -10,5 +10,7 @@ namespace ToDoBusinessLogic.DTO
         public string Title { get; set; }
         public DateTime? CreationDate { get; set; }
         public bool Completed { get; set; }
+
+        public ICollection<TodoPointDTO> Points { get; set; }
     }
 }

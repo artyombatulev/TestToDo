@@ -11,7 +11,7 @@ export class TodoPointService {
     }
 
     getPoints(todoId: number) {
-        return this.http.get(this.url + '/' + todoId);
+        return this.http.get(this.url + `/${todoId}`);
     }
 
    /* getPoint(id: number) {
@@ -28,11 +28,11 @@ export class TodoPointService {
         return this.http.put(this.url + '/' + point.pointId, point);
     }
 
-    deletePoint(id: number) {
-        return this.http.delete(this.url + '/' + id);
+    deletePoint(point: TodoPoint) {
+        return this.http.post(this.url + '/' + point.pointId, point);
     }
 
-    clearAllPoints(id: number) {
-        return this.http.delete(this.url + '/' + id );
+    deleteAllPoints(id: number) {
+        return this.http.delete(this.url + `/${id}`);
     }
 }

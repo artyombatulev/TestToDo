@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using ToDoBusinessLogic.DTO;
 using ToDoBusinessLogic.Infrastructure;
 using ToDoBusinessLogic.Interfaces;
@@ -14,59 +15,59 @@ namespace ToDoBusinessLogic.Services
     public class TodoPointService : ITodoPointService
     {
         IUnitOfWork Database { get; set; }
+        private readonly IMapper _mapper;
 
-        public TodoPointService(IUnitOfWork uow)
+        public TodoPointService(IUnitOfWork uow, IMapper mapper)
         {
             Database = uow;
+            _mapper = mapper;
         }
-        public IEnumerable<TodoPointDTO> GetTodoPoints()
+        public async Task<IEnumerable<TodoPointDTO>> GetPoints()
         {
-            // применяем автомаппер для проекции одной коллекции на другую
-            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<TodoPoint, TodoPointDTO>()).CreateMapper();
-            return mapper.Map<IEnumerable<TodoPoint>, List<TodoPointDTO>>(Database.TodoPoints.GetAll());
+            var points = await Database.TodoPointRep.GetAllPointsAsync();
+            return _mapper.Map<IEnumerable<TodoPointDTO>>(points);
         }
 
-        public TodoPointDTO GetTodoPoint(int? id)
+        public async Task<TodoPointDTO> GetPoint(int? id)
         {
             if (id == null)
                 throw new ValidationException("Not found Point Id", "");
-            var todoPoint = Database.TodoPoints.Get(id.Value);
+            var todoPoint = await Database.TodoPointRep.GetPointByIdAsync(id.Value);
             if (todoPoint == null)
                 throw new ValidationException("Point not found", "");
 
-            return new TodoPointDTO { PointId = todoPoint.PointId, Description = todoPoint.Description, IsCompleted = todoPoint.IsCompleted, DateOfComplition = todoPoint.DateOfComplition, TodoId = todoPoint.TodoId };
+            return _mapper.Map<TodoPointDTO>(todoPoint);
         }
 
         public void AddPoint(TodoPointDTO pointDto)
         {
-            var point = new TodoPoint { PointId = pointDto.PointId, Description = pointDto.Description, DateOfComplition = pointDto.DateOfComplition, IsCompleted = pointDto.IsCompleted, TodoId = pointDto.TodoId };
-            Database.TodoPoints.Create(point);
+            var point = _mapper.Map<TodoPoint>(pointDto);
+            Database.TodoPointRep.CreatePoint(point);
             Database.Save();
         }
 
         public void EditPoint(TodoPointDTO pointDto)
         {
-            var point = new TodoPoint { PointId = pointDto.PointId, Description = pointDto.Description, DateOfComplition = pointDto.DateOfComplition, IsCompleted = pointDto.IsCompleted, TodoId = pointDto.TodoId };
-            Database.TodoPoints.Update(point);
+            var point = _mapper.Map<TodoPoint>(pointDto);
+            Database.TodoPointRep.UpdatePoint(point);
             Database.Save();
 
         }
 
-        public void DeletePoint(int? id)
+        public void DeletePoint(TodoPointDTO pointDto)
         {
-            var point = Database.TodoPoints.Get(id.Value);
-            Database.TodoPoints.Delete(point);
+            //var point = Database.TodoPointRep.GetPointByIdAsync(id.Value);
+            Database.TodoPointRep.DeletePoint(_mapper.Map<TodoPoint>(pointDto));
             Database.Save();
         }
 
         public void DeletePointsByTodoId(int? id)
         {
-            var pointsall = Database.TodoPoints.GetAll();
-            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<TodoPoint, TodoPointDTO>()).CreateMapper();
-            var points = mapper.Map<IEnumerable<TodoPoint>, List<TodoPointDTO>>(pointsall.Where(x => x.TodoId == id));
-            foreach(TodoPointDTO point in points)
+            var pointsall = Database.TodoRep.GetTodoWithDetailsAsync(id.Value);
+            var points = _mapper.Map<IEnumerable<TodoPointDTO>>(pointsall.Result.Points);
+            foreach (TodoPointDTO point in points)
             {
-                DeletePoint(point.PointId);
+                DeletePoint(point);
             }
             Database.Save();
 

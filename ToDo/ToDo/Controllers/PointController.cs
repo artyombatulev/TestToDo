@@ -17,126 +17,182 @@ namespace ToDo.Controllers
     public class PointController : ControllerBase
     {
         private readonly ILogger<PointController> _logger;
+        private readonly IMapper _mapper;
         ITodoService todoService;
         ITodoPointService pointService;
 
-        public PointController(ITodoService todoserv,ITodoPointService pointserv, ILogger<PointController> logger)
+        public PointController(ITodoService todoserv,ITodoPointService pointserv, ILogger<PointController> logger, IMapper mapper)
         {
             todoService = todoserv;
             pointService = pointserv;
             _logger = logger;
+            _mapper = mapper;
         }
 
        // [Route("api/point/todo/")]
         [HttpGet("{id}")]
-        public IEnumerable<TodoPointViewModel> GetAllPointsByTodoId(int id)
+        public async Task<ActionResult<TodoViewModel>> GetAllPointsByTodoId(int id)
         {
-            /*
-            IEnumerable<TodoPointDTO> pointDtos = pointService.GetTodoPoints();
-            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<TodoPointDTO, TodoPointViewModel>()).CreateMapper();
-            return mapper.Map<IEnumerable<TodoPointDTO>, List<TodoPointViewModel>>(pointDtos.Where(x => x.TodoId == id));
-        */
+            try
+            {
+                var todo = await todoService.GetTodoWithPoints(id);
+                if (todo == null)
+                {
+                    _logger.LogError($"Todo with id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
+                else
+                {
+                    _logger.LogInformation($"Returned todo with id: {id}");
+                    return _mapper.Map<TodoViewModel>(todo);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside GetAllPointsByTodoId action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
 
-            IEnumerable<TodoPointDTO> pointDtos = pointService.GetTodoPoints();
-            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<TodoPointDTO, TodoPointViewModel>()).CreateMapper();
-            var points = mapper.Map<IEnumerable<TodoPointDTO>, List<TodoPointViewModel>>(pointDtos.Where(x => x.TodoId == id));
-            /*
-            int countPoints = points.Count;
-            int count = 0;
-            foreach (TodoPointViewModel pvm in points)
+        //[HttpGet("{id}")]
+        public async Task<ActionResult<TodoPointViewModel>> GetPointById(int id)
+        {
+
+            try
             {
-                if (pvm.IsCompleted == true)
-                    count++;
+                var point = await pointService.GetPoint(id);
+                if (point == null)
+                {
+                    _logger.LogError($"Point with id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
+                else
+                {
+                    _logger.LogInformation($"Returned point with id: {id}");
+
+                    var pointResult = _mapper.Map<TodoPointViewModel>(point);
+                    return pointResult;
+                }
             }
-            if (count == countPoints)
+            catch (Exception ex)
             {
-                TodoDTO todoDto = todoService.GetTodo(id);
-                todoDto.Completed = true;
-                todoService.EditTodo(todoDto);
+                _logger.LogError($"Something went wrong inside GetPointById action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
             }
-            else
-            {
-                TodoDTO todoDto = todoService.GetTodo(id);
-                todoDto.Completed = false;
-                todoService.EditTodo(todoDto);
-            }
-            */
-            return points;
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody]TodoPointViewModel pointModel)
+        public ActionResult<TodoPointViewModel> PostPoint([FromBody]TodoPointViewModel pointModel)
         {
-            if (ModelState.IsValid)
+            try
             {
-                var pointDto = new TodoPointDTO { PointId = pointModel.PointId, Description = pointModel.Description, IsCompleted = pointModel.IsCompleted, DateOfComplition = pointModel.DateOfComplition, TodoId = pointModel.TodoId };
+                if (pointModel == null)
+                {
+                    _logger.LogError("Point object sent from client is null.");
+                    return BadRequest("Point object is null");
+                }
 
-                pointService.AddPoint(pointDto);
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Invalid point object sent from client.");
+                    return BadRequest("Invalid model object");
+                }
+                pointModel.IsCompleted = false;
 
-                return Ok(pointModel);
+                var pointEntity = _mapper.Map<TodoPointDTO>(pointModel);
 
+                pointService.AddPoint(pointEntity);
 
+                return CreatedAtAction("GetPointById", new { id = pointEntity.PointId }, pointEntity);
             }
-            return BadRequest(ModelState);
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside PostPoint action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody]TodoPointViewModel pointModel)
+        public async Task<IActionResult> PutPoint(int id, [FromBody]TodoPointViewModel pointModel)
         {
-            if (ModelState.IsValid)
+            try
             {
-                if(pointModel.IsCompleted == true && pointModel.DateOfComplition == null)
+                if (pointModel == null)
+                {
+                    _logger.LogError("Point object sent from client is null.");
+                    return BadRequest("Point object is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Invalid point object sent from client.");
+                    return BadRequest("Invalid model object");
+                }
+
+                var pointEntity = await pointService.GetPoint(id);
+                if (pointEntity == null)
+                {
+                    _logger.LogError($"Point with id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
+
+                if (pointModel.IsCompleted == true && pointModel.DateOfComplition == null)
                 {
                     pointModel.DateOfComplition = DateTime.Now;
                 }
-                if(pointModel.IsCompleted == false && pointModel.DateOfComplition != null)
+                if (pointModel.IsCompleted == false && pointModel.DateOfComplition != null)
                 {
                     pointModel.DateOfComplition = null;
                 }
-                var pointDto = new TodoPointDTO { PointId = pointModel.PointId, Description = pointModel.Description, IsCompleted = pointModel.IsCompleted, DateOfComplition = pointModel.DateOfComplition, TodoId = pointModel.TodoId };
-                pointService.EditPoint(pointDto);
-                return Ok(pointModel);
+
+                pointService.EditPoint(_mapper.Map<TodoPointDTO>(pointModel));
+
+                return NoContent();
             }
-            return BadRequest(ModelState);
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside PutPoint action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
         }
-        
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        [HttpPost("{id}")]
+        public async Task<ActionResult<TodoPointViewModel>> DeletePoint(int id,[FromBody]TodoPointViewModel pointModel)
         {
-            TodoPointDTO pointDto = pointService.GetTodoPoint(id);
-            if (pointDto != null)
+            try
             {
-                pointService.DeletePoint(id);
+                var point = await pointService.GetPoint(pointModel.PointId);
+                if (point == null)
+                {
+                    _logger.LogError($"Point with id: {pointModel.PointId}, hasn't been found in db.");
+                    return NotFound();
+                }
 
+                pointService.DeletePoint(point);
+
+                //return NoContent();
+                return _mapper.Map<TodoPointViewModel>(point);
             }
-            return Ok(pointDto);
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside DeletePoint action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
         }
-        [HttpDelete]
-        public void DeleteAllPoints(int[] id)
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+       [HttpDelete("{id}")]
+        public IActionResult DeleteAllPoints(int id)
         {
+            try
+            {
+                pointService.DeletePointsByTodoId(id);
 
-            foreach (int i in id)
-            {
-                pointService.DeletePoint(i);
+                return NoContent();
             }
-            /*
-            TodoDTO todoDto = todoService.GetTodo(id);
-            if (todoDto != null)
+            catch (Exception ex)
             {
-                todoService.DeleteTodo(id);
-
+                _logger.LogError($"Something went wrong inside DeleteAllPoints action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
             }
-            return Ok(todoDto);
-            
-            IEnumerable<TodoPointDTO> pointDtos = pointService.GetTodoPoints();
-            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<TodoPointDTO, TodoPointViewModel>()).CreateMapper();
-            var points = mapper.Map<IEnumerable<TodoPointDTO>, List<TodoPointViewModel>>(pointDtos.Where(x => x.TodoId == id));
-            foreach(TodoPointViewModel pvm in points)
-            {
-                pointService.DeletePoint(pvm.PointId);
-            }
-            return Ok(points);*/
-            //pointService.DeletePointsByTodoId(id);
         }
     }
 }

@@ -13,7 +13,7 @@ var TodoPointService = /** @class */ (function () {
         this.url = "/api/point";
     }
     TodoPointService.prototype.getPoints = function (todoId) {
-        return this.http.get(this.url + '/' + todoId);
+        return this.http.get(this.url + ("/" + todoId));
     };
     /* getPoint(id: number) {
          return this.http.get(this.url + '/' + id);
@@ -28,11 +28,11 @@ var TodoPointService = /** @class */ (function () {
     TodoPointService.prototype.updatePoint = function (point) {
         return this.http.put(this.url + '/' + point.pointId, point);
     };
-    TodoPointService.prototype.deletePoint = function (id) {
-        return this.http.delete(this.url + '/' + id);
+    TodoPointService.prototype.deletePoint = function (point) {
+        return this.http.post(this.url + '/' + point.pointId, point);
     };
-    TodoPointService.prototype.clearAllPoints = function (id) {
-        return this.http.delete(this.url + '/' + id);
+    TodoPointService.prototype.deleteAllPoints = function (id) {
+        return this.http.delete(this.url + ("/" + id));
     };
     TodoPointService = __decorate([
         core_1.Injectable()

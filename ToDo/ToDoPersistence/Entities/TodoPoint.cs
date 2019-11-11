@@ -18,8 +18,9 @@ namespace ToDoPersistence.Entities
         public bool IsCompleted { get; set; } = false;
         public DateTime? DateOfComplition { get; set; } = null;
         [Required]
-        public Todo Todo { get; set; }
-        [Required]
         public int TodoId { get; set; }
+
+        [Required]
+        public Todo Todo { get; set; }
     }
 }

@@ -16,22 +16,22 @@ var TodoService = /** @class */ (function () {
         return this.http.get(this.url);
     };
     TodoService.prototype.getTodo = function (id) {
-        return this.http.get(this.url + '/' + id);
+        return this.http.get(this.url + ("/" + id));
     };
     TodoService.prototype.createTodo = function (todo) {
-        var dateTime = new Date();
-        todo.creationDate = dateTime;
-        todo.completed = false;
+        //let dateTime = new Date();
+        //todo.creationDate = dateTime;
+        //todo.completed = false;
         return this.http.post(this.url, todo);
     };
     TodoService.prototype.updateTodo = function (todo) {
         return this.http.put(this.url + '/' + todo.todoId, todo);
     };
-    TodoService.prototype.deleteTodo = function (id) {
-        return this.http.delete(this.url + '/' + id);
-    };
     TodoService.prototype.deleteAllTodos = function () {
-        return this.http.delete(this.url + '/' + 0 + true);
+        return this.http.delete(this.url);
+    };
+    TodoService.prototype.deleteTodo = function (id) {
+        return this.http.delete(this.url + ("/" + id));
     };
     TodoService = __decorate([
         core_1.Injectable()

@@ -2,6 +2,7 @@
 <h1>{{todo.title}}</h1>
 <div *ngIf="tableMode; else create" class="point_table">
   <button mat-button class="create_todo_icon text_btn" (click)="add()"><mat-icon class="btn_box">add_box</mat-icon> Create Point</button>
+  <button mat-button class="create_todo_icon text_btn" [routerLink]="['/todo']"><mat-icon class="btn_box">arrow_back</mat-icon> Go back</button>
   <table class="table table-striped">
     <thead class="table_header">
       <tr>
@@ -13,13 +14,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let p of points">
+      <tr *ngFor="let p of todo.points">
         <ng-template [ngIf]="point?.pointId != p.pointId" [ngIfElse]="edit">
           <td>{{p?.description}}</td>
           <!--
-  <td [ngIf]="p.dateOfComplition != null" [ngIfElse]="not-null">{{p?.dateOfComplition}}</td>
-  <td #not-null>{{p?.dateOfComplition}}</td>-->
-        <td *ngIf="p?.dateOfComplition != null">{{changeDateFormat(p?.dateOfComplition)}}</td>
+          <td [ngIf]="p.dateOfComplition != null" [ngIfElse]="not-null">{{p?.dateOfComplition}}</td>
+          <td #not-null>{{p?.dateOfComplition}}</td>-->
+          <td *ngIf="p?.dateOfComplition != null">{{changeDateFormat(p?.dateOfComplition)}}</td>
           <td *ngIf="p?.dateOfComplition == null">---</td>
           <td>
             <mat-icon *ngIf="p?.isCompleted != true" class="check_false_icon" aria-hidden="false" aria-label="check_false_icon">check_box_outline_blank</mat-icon>
@@ -43,7 +44,7 @@
   </div>
   <hr>
   <div class="delete_all">
-    <button class="delete_all_btn" (click)="clearAllPoints()"> Clear All <mat-icon class="btn_box">delete_sweep</mat-icon></button>
+    <button class="delete_all_btn" (click)="deleteAllPoints()"> Clear All <mat-icon class="btn_box">delete_sweep</mat-icon></button>
   </div>
 </div>
 

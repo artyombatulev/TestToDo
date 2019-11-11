@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ToDo.Utility.Mapping;
 using ToDoBusinessLogic.Interfaces;
+using ToDoBusinessLogic.Mapping;
 using ToDoBusinessLogic.Services;
 using ToDoPersistence.EF;
 using ToDoPersistence.Interfaces;
@@ -34,6 +36,14 @@ namespace ToDo
             services.AddDbContext<TodoContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
 
+            var config = new AutoMapper.MapperConfiguration(c =>
+            {
+                c.AddProfile(new MappingProfile());
+                c.AddProfile(new AppMappingProfile());
+            });
+            var mapper = config.CreateMapper();
+            services.AddSingleton(mapper);
+
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -59,13 +69,18 @@ namespace ToDo
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
-            app.UseMvc(routes =>
+            /*app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller}/{action=Index}/{id?}");
+            });*/
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller}/{action}/{id?}");
             });
-
             app.UseSpa(spa =>
             {
                 // To learn more about options for serving an Angular SPA from ASP.NET Core,

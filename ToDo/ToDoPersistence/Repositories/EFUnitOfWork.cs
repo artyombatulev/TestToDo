@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 //using System.Threading.Tasks;
 using ToDoPersistence.EF;
 using ToDoPersistence.Entities;
@@ -12,41 +13,41 @@ namespace ToDoPersistence.Repositories
     public class EFUnitOfWork : IUnitOfWork
     {
         private TodoContext db;
-        private TodoRepository todoRepository;
-        private TodoPointRepository todoPointRepository;
+        private ITodoRepository _todoRepository;
+        private ITodoPointRepository _todoPointRepository;
 
         public EFUnitOfWork(TodoContext todoContext)
         {
             db = todoContext;
         }
-        public IRepository<Todo> Todos
+        public ITodoRepository TodoRep
         {
             get
             {
-                if (todoRepository == null)
-                    todoRepository = new TodoRepository(db);
-                return todoRepository;
+                if (_todoRepository == null)
+                    _todoRepository = new TodoRepository(db);
+                return _todoRepository;
             }
         }
 
-        public IRepository<TodoPoint> TodoPoints
+        public ITodoPointRepository TodoPointRep
         {
             get
             {
-                if (todoPointRepository == null)
-                    todoPointRepository = new TodoPointRepository(db);
-                return todoPointRepository;
+                if (_todoPointRepository == null)
+                    _todoPointRepository = new TodoPointRepository(db);
+                return _todoPointRepository;
             }
         }
-
+        /*
         public void Save()
         {
             db.SaveChanges();
-        }
-        /*public async Task Save()
+        }*/
+        public async Task Save()
         {
             await db.SaveChangesAsync();
-        }*/
+        }
 
         private bool disposed = false;
 

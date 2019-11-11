@@ -23,15 +23,15 @@ namespace ToDoPersistence.Repositories
             return this.RepositoryContext.Set<T>().AsNoTracking();
         }
 
-        public IQueryable<T> Find(Expression<Func<T, bool>> expression)
+        public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression)
         {
             return this.RepositoryContext.Set<T>().Where(expression).AsNoTracking();
         }
 
-        public T Get(int id)
+        /*public T Get(int id)
         {
             return this.RepositoryContext.Set<T>().Find(id);
-        }
+        }*/
 
         public void Create(T entity)
         {

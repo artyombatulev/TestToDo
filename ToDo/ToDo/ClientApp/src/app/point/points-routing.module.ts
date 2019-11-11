@@ -5,7 +5,7 @@ import { PointDetailsComponent} from 'src/app/point/point-details/point-details.
 
 
 const routes: Routes = [
-    { path: 'point', component: PointComponent },
+    //{ path: 'point', component: PointComponent },
     { path: 'point/:id', component: PointDetailsComponent }
 ];
 

@@ -21,7 +21,6 @@ export class PointDetailsComponent implements OnInit {
     pointsId: number[];
     todo: Todo = new Todo();
     point: TodoPoint = new TodoPoint();
-    points: TodoPoint[];
 
     tableMode: boolean = true;        
     filtre: string = "All"
@@ -36,17 +35,15 @@ export class PointDetailsComponent implements OnInit {
     ngOnInit() {
         this.loadPoints(this.filtre);
         //this.checkCompletedPoints();
-        this.loadTodo(this.id);
+        
     }
     loadPoints(f) {
         //this.todoService.getTodos()
         //.subscribe((data: Todo[]) => this.todos = data);
         this.pointService.getPoints(this.id).toPromise().then(res => {
-            this.points = res as TodoPoint[]
+            this.todo = res as Todo
             this.filterPoints(this.filtre)
         });
-
-
     }
     loadTodo(id: number) {
         this.todoService.getTodo(id).toPromise().then(res => { this.todo = res as Todo });
@@ -61,14 +58,23 @@ export class PointDetailsComponent implements OnInit {
 
             if (this.point.pointId == null) {
                 this.pointService.createPoint(this.point, this.id)
-                    .subscribe((data: TodoPoint) => this.points.push(data));
-                this.toastr.success('Point Was Added Successfully', 'Point Adding');
+                    .subscribe((data: TodoPoint) => {
+                        this.todo.points.push(data),
+                        this.toastr.success('Point Was Added Successfully', 'Point Adding'),
+                        this.loadPoints(this.filtre),
+                        this.cancel()
+                    }, () => {
+                    })
             } else {
                 this.pointService.updatePoint(this.point)
-                    .subscribe(data => this.loadPoints(this.filtre));
-                this.toastr.info('Point Was Updated successfully', 'Point Updating');
+                    .subscribe(data => {
+                        this.toastr.info('Point Was Updated successfully', 'Point Updating'),
+                        this.loadPoints(this.filtre),
+                        this.cancel()
+            })
+
             }
-            this.cancel();
+            
         }
     }
 
@@ -83,17 +89,32 @@ export class PointDetailsComponent implements OnInit {
     cancel() {
         this.point = new TodoPoint();
         this.tableMode = true;
+        this.loadPoints(this.filtre);
     }
 
     delete(p: TodoPoint) {
-        this.pointService.deletePoint(p.pointId)
-            .subscribe(data => this.loadPoints(this.filtre));
-        this.toastr.info('Point Was Deleted successfully', 'Point Deleting');
+        this.pointService.deletePoint(p)
+            .subscribe(data => {
+                this.loadPoints(this.filtre)
+                this.toastr.info('Point Was Deleted successfully', 'Point Deleting')
+            },
+                err => {
+                console.log(err)
+            }
+            );
     }
 
 
-    clearAllPoints() {
-        this.pointService.clearAllPoints(this.id);
+    deleteAllPoints() {
+        this.pointService.deleteAllPoints(this.id)
+            .subscribe(data => {
+                  this.loadPoints(this.filtre)
+                  this.toastr.info('All Points Was Deleted successfully', 'Points Deleting')
+        },
+            err => {
+                console.log(err)
+            }
+        );
     }
 
     add() {
@@ -109,13 +130,13 @@ export class PointDetailsComponent implements OnInit {
 
     filterPoints(f) {
         if (f == 'Active') {
-            this.points = this.points.filter(x => x.isCompleted == false)
+            this.todo.points = this.todo.points.filter(x => x.isCompleted == false)
         }
         if (f == 'Completed') {
-            this.points = this.points.filter(x => x.isCompleted)
+            this.todo.points = this.todo.points.filter(x => x.isCompleted)
         }
         if (f == 'All') {
-            this.points = this.points;
+            this.todo.points = this.todo.points;
         }
     }
     
@@ -130,13 +151,7 @@ export class PointDetailsComponent implements OnInit {
     }
 
     changeDateFormat(p: any) {
-        //var moment = require('moment');
-        //var date = moment(p.dateOfComplition).format("hh:mm a D MMM. YYYY");
-       // return date;
-        
-            
         return  this.datepipe.transform(p, 'hh:mm a  dd/MM/yyy');
-        
     }
     
 }
