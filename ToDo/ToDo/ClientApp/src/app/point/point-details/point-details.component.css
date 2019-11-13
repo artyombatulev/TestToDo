@@ -1,16 +1,9 @@
-.delete_icon {
+.delete_icon, .edit_icon, .add_icon, .save_icon, .cancel_icon, .todo_title {
   cursor: pointer;
 }
 
-.edit_icon {
-  cursor: pointer;
-}
 
-.add_icon {
-  cursor: pointer;
-}
-
-.create_todo_icon {
+.create_point_icon {
   margin-top: 0;
   background: transparent;
   color: currentColor;
@@ -38,18 +31,6 @@
   position: relative;
 }
 
-.save_icon {
-  cursor: pointer;
-}
-
-.cancel_icon {
-  cursor: pointer;
-}
-
-.todo_title {
-  cursor: pointer;
-}
-
   .todo_title:hover {
     text-decoration: underline;
     background: rgba(0,0,0,0);
@@ -60,7 +41,7 @@
   font-weight: bold
 }
 
-.cancel_todo_icon {
+.cancel_point_icon {
   margin-top: 0;
   background: transparent;
   color: currentColor;
@@ -83,7 +64,7 @@
   border-radius: 2px;
 }
 
-.save_todo_icon {
+.save_point_icon {
   margin-top: 0;
   background: transparent;
   color: currentColor;
@@ -115,7 +96,7 @@
   color: #3a7999;
 }
 
-.fltr_todo:hover {
+.fltr_point:hover {
   border-color: transparent;
   background: #D5E5E5;
   color: #3a7999;
@@ -169,7 +150,8 @@
 }
 
 .form-control:focus + .form-control-placeholder,
-.form-control:valid + .form-control-placeholder {
+.form-control:valid + .form-control-placeholder,
+.form-control[readonly] + .form-control-placeholder {
   font-size: 75%;
   transform: translate3d(0, -100%, 0);
   opacity: 1;
@@ -177,4 +159,29 @@
 
 .col-md-6, .point_table {
   margin-top: 3%;
+}
+table {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 500px;
+}
+
+th.mat-header-cell {
+  text-align: left;
+  max-width: 300px;
+}
+
+.bottom_panel {
+  margin-top: 25px;
+}
+
+.form-control_disabled + .form-control-placeholder_disabled {
+  font-size: 75% !important;
+  transform: translate3d(0, -100%, 0) !important;
+  opacity: 1 !important;
+}
+
+.main_column {
+  width: 30%;
 }

@@ -46,25 +46,26 @@ namespace ToDoBusinessLogic.Services
 
             int countPoints = todo.Points.Count;
             int countCompletedPoints = todo.Points.Count(x => x.IsCompleted == true);
-            if (countCompletedPoints == countPoints)
-            {
-                if (todo.Completed != true)
+            
+                if (countCompletedPoints == countPoints && countPoints != 0)
                 {
-                    todo.Completed = true;
-                    Database.TodoRep.UpdateTodo(todo);
-                    await Database.Save();
+                    if (todo.Completed != true)
+                    {
+                        todo.Completed = true;
+                        Database.TodoRep.UpdateTodo(todo);
+                        await Database.Save();
+                    }
                 }
-            }
-            else
-            {
-                if (todo.Completed != false)
+                else
                 {
-                    todo.Completed = false;
-                    Database.TodoRep.UpdateTodo(todo);
-                    await Database.Save();
+                    if (todo.Completed != false)
+                    {
+                        todo.Completed = false;
+                        Database.TodoRep.UpdateTodo(todo);
+                        await Database.Save();
+                    }
                 }
-            }
-
+            
             return _mapper.Map<TodoDTO>(todo);
         }
 

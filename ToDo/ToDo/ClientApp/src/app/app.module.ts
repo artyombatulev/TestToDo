@@ -18,20 +18,27 @@ import { MatIconModule } from '@angular/material/icon';
 import { DatePipe } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogBodyComponent } from './dialog-body/dialog-body.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatRadioModule, MatTableModule, MatCheckboxModule, MatSortModule, MatFormFieldModule, MatInputModule, MatPaginatorModule } from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoComponent,
     PageNotFoundComponent,
-    AboutComponent
+    AboutComponent,
+    DialogBodyComponent
   ],
   imports: [
       BrowserModule, PointsModule, AppRoutingModule, NgbModule,FormsModule,
       HttpClientModule, HttpModule, BrowserAnimationsModule, MatIconModule, ReactiveFormsModule,
-      ToastrModule.forRoot(),
+      ToastrModule.forRoot(), MatDialogModule, MatButtonModule, MatRadioModule, MatTableModule, MatCheckboxModule,
+      MatSortModule, MatFormFieldModule, MatInputModule, MatPaginatorModule
   ],
     providers: [TodoService, TodoPointService, DatePipe],
-  bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
+    entryComponents: [DialogBodyComponent]
 })
 export class AppModule { }

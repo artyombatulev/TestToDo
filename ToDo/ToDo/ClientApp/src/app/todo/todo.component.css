@@ -1,3 +1,5 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 .delete_icon, .edit_icon, .add_icon, .save_icon, .cancel_icon, .todo_title {
   cursor: pointer;
 }
@@ -105,9 +107,9 @@
   border: none;
   color: #fff;
   text-align: center;
-  font-size: 16px;
-  padding: 4px;
-  width: 120px;
+  font-size: 14px;
+  padding: 3px;
+  width: 110px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 18px;
@@ -154,7 +156,8 @@
 }
 
 .form-control:focus + .form-control-placeholder,
-.form-control:valid + .form-control-placeholder {
+.form-control:valid + .form-control-placeholder,
+.form-control[readonly] + .form-control-placeholder {
   font-size: 75%;
   transform: translate3d(0, -100%, 0);
   opacity: 1;
@@ -164,3 +167,27 @@
 }
 
 
+table {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 500px;
+}
+
+th.mat-header-cell {
+  text-align: left;
+  max-width: 300px;
+}
+
+.bottom_panel {
+  margin-top: 25px;
+}
+
+.form-control_disabled + .form-control-placeholder_disabled {
+  font-size: 75% !important;
+  transform: translate3d(0, -100%, 0) !important;
+  opacity: 1 !important;
+}
+.main_column {
+  width: 30%;
+}
