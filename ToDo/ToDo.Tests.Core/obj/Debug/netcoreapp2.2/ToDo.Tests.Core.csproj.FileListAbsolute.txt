@@ -1,0 +1,34 @@
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.deps.json
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.AssemblyInfo.cs
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.csprojAssemblyReference.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.csproj.CopyComplete
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.deps.json
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.csprojAssemblyReference.cache
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.AssemblyInfoInputs.cache
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.AssemblyInfo.cs
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.csproj.CopyComplete
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.pdb
+E:\ToDoTest\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.deps.json
+E:\ToDoTest\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.dll
+E:\ToDoTest\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.pdb
+E:\ToDoTest\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+E:\ToDoTest\ToDo\ToDo.Tests.Core\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+E:\ToDoTest\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.csprojAssemblyReference.cache
+E:\ToDoTest\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.AssemblyInfoInputs.cache
+E:\ToDoTest\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.AssemblyInfo.cs
+E:\ToDoTest\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.csproj.CopyComplete
+E:\ToDoTest\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.dll
+E:\ToDoTest\ToDo\ToDo.Tests.Core\obj\Debug\netcoreapp2.2\ToDo.Tests.Core.pdb

@@ -1,0 +1,52 @@
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.PresentationAdapters.deps.json
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.PresentationAdapters.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.PresentationAdapters.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.AssemblyInfo.cs
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.csprojAssemblyReference.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.Persistence.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.ViewModels.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.ViewModels.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.Persistence.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.csproj.CopyComplete
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.PresentationAdapters.deps.json
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.PresentationAdapters.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.PresentationAdapters.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.Persistence.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.ViewModels.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.ViewModels.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.Persistence.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.csprojAssemblyReference.cache
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.AssemblyInfoInputs.cache
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.AssemblyInfo.cs
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.csproj.CopyComplete
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.pdb
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.PresentationAdapters.deps.json
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.PresentationAdapters.dll
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.PresentationAdapters.pdb
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.Persistence.dll
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.ViewModels.dll
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.ViewModels.pdb
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\bin\Debug\netcoreapp2.2\ToDo.Persistence.pdb
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.csprojAssemblyReference.cache
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.AssemblyInfoInputs.cache
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.AssemblyInfo.cs
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.csproj.CopyComplete
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.dll
+E:\ToDoTest\ToDo\ToDo.PresentationAdapters\obj\Debug\netcoreapp2.2\ToDo.PresentationAdapters.pdb

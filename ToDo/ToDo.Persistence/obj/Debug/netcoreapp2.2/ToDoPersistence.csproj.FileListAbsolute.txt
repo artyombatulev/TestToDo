@@ -1,0 +1,36 @@
+E:\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDoPersistence.deps.json
+E:\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDoPersistence.dll
+E:\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDoPersistence.pdb
+E:\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.AssemblyInfoInputs.cache
+E:\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.AssemblyInfo.cs
+E:\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.dll
+E:\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.pdb
+E:\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.csprojAssemblyReference.cache
+E:\TestToDo\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDoPersistence.deps.json
+E:\TestToDo\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDoPersistence.dll
+E:\TestToDo\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDoPersistence.pdb
+E:\TestToDo\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.csprojAssemblyReference.cache
+E:\TestToDo\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.AssemblyInfoInputs.cache
+E:\TestToDo\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.AssemblyInfo.cs
+E:\TestToDo\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.dll
+E:\TestToDo\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.pdb
+E:\ToDoTest\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDoPersistence.deps.json
+E:\ToDoTest\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDoPersistence.dll
+E:\ToDoTest\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDoPersistence.pdb
+E:\ToDoTest\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.csprojAssemblyReference.cache
+E:\ToDoTest\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.AssemblyInfoInputs.cache
+E:\ToDoTest\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.AssemblyInfo.cs
+E:\ToDoTest\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.dll
+E:\ToDoTest\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDoPersistence.deps.json
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDoPersistence.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDoPersistence.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.csprojAssemblyReference.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.AssemblyInfo.cs
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoPersistence\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoPersistence\obj\Debug\netcoreapp2.2\ToDoPersistence.csproj.CopyComplete

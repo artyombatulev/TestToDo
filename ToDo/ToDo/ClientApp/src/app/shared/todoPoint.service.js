@@ -12,15 +12,7 @@ var TodoPointService = /** @class */ (function () {
         this.http = http;
         this.url = "/api/point";
     }
-    TodoPointService.prototype.getPoints = function (todoId) {
-        return this.http.get(this.url + ("/" + todoId));
-    };
-    /* getPoint(id: number) {
-         return this.http.get(this.url + '/' + id);
-     }*/
     TodoPointService.prototype.createPoint = function (point, id) {
-        //let dateTime = new Date();
-        //point.dateOfComplition = dateTime;
         point.isCompleted = false;
         point.todoId = id;
         return this.http.post(this.url, point);

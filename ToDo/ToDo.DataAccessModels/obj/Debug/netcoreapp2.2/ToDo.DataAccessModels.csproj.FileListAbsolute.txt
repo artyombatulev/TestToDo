@@ -1,0 +1,25 @@
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.DataAccessModels\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.deps.json
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.DataAccessModels\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.DataAccessModels\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.csprojAssemblyReference.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.AssemblyInfo.cs
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.DataAccessModels\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.deps.json
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.DataAccessModels\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.DataAccessModels\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.csprojAssemblyReference.cache
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.AssemblyInfoInputs.cache
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.AssemblyInfo.cs
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+E:\ToDoTest\ToDo\ToDo.DataAccessModels\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.deps.json
+E:\ToDoTest\ToDo\ToDo.DataAccessModels\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+E:\ToDoTest\ToDo\ToDo.DataAccessModels\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+E:\ToDoTest\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.csprojAssemblyReference.cache
+E:\ToDoTest\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.AssemblyInfoInputs.cache
+E:\ToDoTest\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.AssemblyInfo.cs
+E:\ToDoTest\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+E:\ToDoTest\ToDo\ToDo.DataAccessModels\obj\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb

@@ -38,7 +38,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ToDoBusinessLogic\ToDoBusinessLogic.csproj" />
+    <ProjectReference Include="..\ToDo.Common\ToDo.Common.csproj" />
+    <ProjectReference Include="..\ToDoBusinessLogic\ToDo.BusinessLogic.csproj" />
   </ItemGroup>
 
   <ItemGroup>

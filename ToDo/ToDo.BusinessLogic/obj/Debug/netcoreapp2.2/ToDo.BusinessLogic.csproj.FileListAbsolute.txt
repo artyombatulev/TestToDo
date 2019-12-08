@@ -1,0 +1,40 @@
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.deps.json
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.Persistence.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.Persistence.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.AssemblyInfo.cs
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.csproj.CopyComplete
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.deps.json
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.Persistence.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.Persistence.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.AssemblyInfo.cs
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.csproj.CopyComplete
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+E:\ToDoTest\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.deps.json
+E:\ToDoTest\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+E:\ToDoTest\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+E:\ToDoTest\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+E:\ToDoTest\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.Persistence.dll
+E:\ToDoTest\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.Persistence.pdb
+E:\ToDoTest\ToDo\ToDoBusinessLogic\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.csprojAssemblyReference.cache
+E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.AssemblyInfoInputs.cache
+E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.AssemblyInfo.cs
+E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.csproj.CopyComplete
+E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb

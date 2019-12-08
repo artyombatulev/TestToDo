@@ -11,7 +11,6 @@ import { PointsModule } from './point/points.module';
 import { TodoService } from './shared/todo.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
 import { TodoPointService } from './shared/todoPoint.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
@@ -24,19 +23,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule, MatTableModule, MatCheckboxModule, MatSortModule, MatFormFieldModule, MatInputModule, MatPaginatorModule } from '@angular/material';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TodoComponent,
-    PageNotFoundComponent,
-    AboutComponent,
-    DialogBodyComponent
-  ],
-  imports: [
-      BrowserModule, PointsModule, AppRoutingModule, NgbModule,FormsModule,
-      HttpClientModule, HttpModule, BrowserAnimationsModule, MatIconModule, ReactiveFormsModule,
-      ToastrModule.forRoot(), MatDialogModule, MatButtonModule, MatRadioModule, MatTableModule, MatCheckboxModule,
-      MatSortModule, MatFormFieldModule, MatInputModule, MatPaginatorModule
-  ],
+    declarations: [
+        AppComponent,
+        TodoComponent,
+        PageNotFoundComponent,
+        AboutComponent,
+        DialogBodyComponent
+    ],
+    imports: [
+        BrowserModule, PointsModule, AppRoutingModule, NgbModule, FormsModule,
+        HttpClientModule, BrowserAnimationsModule, MatIconModule, ReactiveFormsModule,
+        ToastrModule.forRoot(), MatDialogModule, MatButtonModule, MatRadioModule, MatTableModule, MatCheckboxModule,
+        MatSortModule, MatFormFieldModule, MatInputModule, MatPaginatorModule
+    ],
     providers: [TodoService, TodoPointService, DatePipe],
     bootstrap: [AppComponent],
     entryComponents: [DialogBodyComponent]

@@ -19,9 +19,6 @@ var TodoService = /** @class */ (function () {
         return this.http.get(this.url + ("/" + id));
     };
     TodoService.prototype.createTodo = function (todo) {
-        //let dateTime = new Date();
-        //todo.creationDate = dateTime;
-        //todo.completed = false;
         return this.http.post(this.url, todo);
     };
     TodoService.prototype.updateTodo = function (todo) {

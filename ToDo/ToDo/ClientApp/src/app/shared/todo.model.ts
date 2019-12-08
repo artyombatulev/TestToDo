@@ -6,5 +6,6 @@ export class Todo {
         public title?: string,
         public creationDate?: Date,
         public completed?: boolean,
-        public points?: TodoPoint[]) { }
+        public points?: TodoPoint[]
+    ) { }
 }

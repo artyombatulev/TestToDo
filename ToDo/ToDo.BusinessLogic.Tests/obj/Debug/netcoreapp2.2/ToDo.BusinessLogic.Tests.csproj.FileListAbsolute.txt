@@ -1,0 +1,81 @@
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.deps.json
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.csprojAssemblyReference.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.AssemblyInfo.cs
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.runtimeconfig.json
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.runtimeconfig.dev.json
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Persistence.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Persistence.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.csproj.CopyComplete
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.dll
+C:\Users\User\Downloads\TestToDo-master (1)\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.deps.json
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.runtimeconfig.json
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.runtimeconfig.dev.json
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Persistence.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Persistence.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.csprojAssemblyReference.cache
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.AssemblyInfoInputs.cache
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.AssemblyInfo.cs
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.csproj.CopyComplete
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Views.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Views.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\nlog.config
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Common.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.PresentationAdapters.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.ViewModels.dll
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.PresentationAdapters.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Common.pdb
+C:\Users\artyo\Documents\TestToDo-master\TestToDo-master\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.ViewModels.pdb
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.deps.json
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.runtimeconfig.json
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.runtimeconfig.dev.json
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.pdb
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Persistence.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Tests.Core.pdb
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.Persistence.pdb
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.csprojAssemblyReference.cache
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.AssemblyInfoInputs.cache
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.AssemblyInfo.cs
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.csproj.CopyComplete
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic.Tests\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.Tests.pdb

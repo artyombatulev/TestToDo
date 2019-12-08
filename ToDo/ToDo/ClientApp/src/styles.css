@@ -1,8 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .toast-center-center {
   top: 50%;
@@ -65,15 +71,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   word-wrap: break-word;
 }
 
-  .toast-message a,
-  .toast-message label {
-    color: #FFFFFF;
-  }
+.toast-message a,
+.toast-message label {
+  color: #FFFFFF;
+}
 
-    .toast-message a:hover {
-      color: #CCCCCC;
-      text-decoration: none;
-    }
+.toast-message a:hover {
+  color: #CCCCCC;
+  text-decoration: none;
+}
 
 .toast-close-button {
   position: relative;
@@ -87,13 +93,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   /* opacity: 0.8; */
 }
 
-  .toast-close-button:hover,
-  .toast-close-button:focus {
-    color: #000000;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: 0.4;
-  }
+.toast-close-button:hover,
+.toast-close-button:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+}
 
 
 /*Additional properties for button version
@@ -113,30 +119,29 @@ button.toast-close-button {
   z-index: 999999;
 }
 
-  .toast-container * {
-    box-sizing: border-box;
-  }
+.toast-container * {
+  box-sizing: border-box;
+}
 
-  .toast-container .ngx-toastr {
-    position: relative;
-    overflow: hidden;
-    margin: 0 0 6px;
-    padding: 15px 15px 15px 50px;
-    width: 300px;
-    border-radius: 3px 3px 3px 3px;
-    background-position: 15px center;
-    background-repeat: no-repeat;
-    background-size: 24px;
-    box-shadow: 0 0 12px #999999;
-    color: #FFFFFF;
-  }
+.toast-container .ngx-toastr {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 6px;
+  padding: 15px 15px 15px 50px;
+  width: 300px;
+  border-radius: 3px 3px 3px 3px;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  box-shadow: 0 0 12px #999999;
+  color: #FFFFFF;
+}
 
-    .toast-container .ngx-toastr:hover {
-      box-shadow: 0 0 12px #000000;
-      opacity: 1;
-      cursor: pointer;
-    }
-
+.toast-container .ngx-toastr:hover {
+  box-shadow: 0 0 12px #000000;
+  opacity: 1;
+  cursor: pointer;
+}
 
 /* https://github.com/FortAwesome/Font-Awesome-Pro/blob/master/advanced-options/raw-svg/regular/info-circle.svg */
 
@@ -209,7 +214,6 @@ button.toast-close-button {
   opacity: 0.4;
 }
 
-
 /* Responsive Design */
 
 @media all and (max-width: 240px) {
@@ -242,6 +246,7 @@ button.toast-close-button {
     width: 25em;
   }
 }
+
 .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
   border-color: #3a7999;
 }
@@ -254,10 +259,224 @@ button.toast-close-button {
 .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
   background-color: #3a7999;
 }
+
 .mat-radio-button ~ .mat-radio-button {
   margin-left: 10px;
 }
 
 .mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-accent .mat-pseudo-checkbox-checked, .mat-accent .mat-pseudo-checkbox-indeterminate, .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate {
   background-color: #3a7999 !important; /* Red background for example */
+}
+
+.delete_icon, .edit_icon, .add_icon, .save_icon, .cancel_icon, .todo_title, point_description {
+  cursor: pointer;
+}
+
+.create_todo_icon, .create_point_icon {
+  margin-top: 0;
+  background: transparent;
+  color: currentColor;
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 88px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-radius: 2px;
+}
+
+.btn_box {
+  top: 5px;
+  position: relative;
+}
+
+.todo_title:hover, .point_description:hover {
+  text-decoration: underline;
+  background: rgba(0,0,0,0);
+  color: #3a7999;
+}
+
+.table_header {
+  font-weight: bold
+}
+
+.cancel_todo_icon, .cancel_point_icon {
+  margin-top: 0;
+  background: transparent;
+  color: currentColor;
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 88px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-radius: 2px;
+}
+
+.save_todo_icon, .save_point_icon {
+  margin-top: 0;
+  background: transparent;
+  color: currentColor;
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 88px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-radius: 2px;
+}
+
+.text_btn:hover {
+  background: rgba(0,0,0,0);
+  color: #3a7999;
+}
+
+.mat_icon:hover {
+  color: #3a7999;
+}
+
+.fltr_todo:hover, .fltr_point:hover {
+  border-color: transparent;
+  background: #D5E5E5;
+  color: #3a7999;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.delete_all_btn {
+  border-radius: 4px;
+  background-color: #222c2c;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 3px;
+  width: 110px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 18px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.delete_all_btn:hover {
+  background: #d02929;
+  color: #3a7999;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.title {
+  width: 500px;
+}
+
+.body {
+  display: grid;
+  font-family: Avenir;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.* {
+  box-sizing: border-box;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder,
+.form-control[readonly] + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+
+.col-md-6, .todo_table, .point_table {
+  margin-top: 3%;
+}
+
+table {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 500px;
+}
+
+th.mat-header-cell {
+  text-align: left;
+  max-width: 300px;
+}
+
+.bottom_panel {
+  margin-top: 25px;
+}
+
+.form-control_disabled + .form-control-placeholder_disabled {
+  font-size: 75% !important;
+  transform: translate3d(0, -100%, 0) !important;
+  opacity: 1 !important;
+}
+
+.main_column {
+  width: 40%;
+}
+
+.second_column {
+  width: 20%;
+}
+
+.another_column {
+  width: 10%;
+}
+
+.action_column {
+  width: 5%;
+}
+
+button:focus, .form-control {
+  outline-color: transparent;
 }

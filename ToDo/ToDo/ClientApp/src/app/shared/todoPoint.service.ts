@@ -10,20 +10,12 @@ export class TodoPointService {
     constructor(private http: HttpClient) {
     }
 
-    getPoints(todoId: number) {
-        return this.http.get(this.url + `/${todoId}`);
-    }
-
-   /* getPoint(id: number) {
-        return this.http.get(this.url + '/' + id);
-    }*/
-    createPoint(point: TodoPoint,id:number) {
-        //let dateTime = new Date();
-        //point.dateOfComplition = dateTime;
+    createPoint(point: TodoPoint, id: number) {
         point.isCompleted = false;
         point.todoId = id;
         return this.http.post(this.url, point);
     }
+
     updatePoint(point: TodoPoint) {
         return this.http.put(this.url + '/' + point.pointId, point);
     }

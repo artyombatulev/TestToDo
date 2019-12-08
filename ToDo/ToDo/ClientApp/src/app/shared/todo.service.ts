@@ -17,12 +17,11 @@ export class TodoService {
     getTodo(id: number) {
         return this.http.get(this.url + `/${id}`);
     }
+
     createTodo(todo: Todo) {
-        //let dateTime = new Date();
-        //todo.creationDate = dateTime;
-        //todo.completed = false;
         return this.http.post(this.url, todo);
     }
+
     updateTodo(todo: Todo) {
         return this.http.put(this.url + '/' + todo.todoId, todo);
     }
@@ -35,5 +34,5 @@ export class TodoService {
         return this.http.delete(this.url + `/${id}`);
     }
 
-    
+
 }
