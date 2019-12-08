@@ -7376,8 +7376,8 @@
     },
     "ToDo.BusinessLogic/1.0.0": {
       "type": "project",
-      "path": "../ToDoBusinessLogic/ToDo.BusinessLogic.csproj",
-      "msbuildProject": "../ToDoBusinessLogic/ToDo.BusinessLogic.csproj"
+      "path": "../ToDo.BusinessLogic/ToDo.BusinessLogic.csproj",
+      "msbuildProject": "../ToDo.BusinessLogic/ToDo.BusinessLogic.csproj"
     },
     "ToDo.DataAccessModels/1.0.0": {
       "type": "project",
@@ -7386,8 +7386,8 @@
     },
     "ToDo.Persistence/1.0.0": {
       "type": "project",
-      "path": "../ToDoPersistence/ToDo.Persistence.csproj",
-      "msbuildProject": "../ToDoPersistence/ToDo.Persistence.csproj"
+      "path": "../ToDo.Persistence/ToDo.Persistence.csproj",
+      "msbuildProject": "../ToDo.Persistence/ToDo.Persistence.csproj"
     },
     "ToDo.Tests.Core/1.0.0": {
       "type": "project",
@@ -7438,14 +7438,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
+            "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj": {
+              "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj"
+            },
+            "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj": {
+              "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj"
+            },
             "E:\\ToDoTest\\ToDo\\ToDo.Tests.Core\\ToDo.Tests.Core.csproj": {
               "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.Tests.Core\\ToDo.Tests.Core.csproj"
-            },
-            "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj": {
-              "projectPath": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj"
-            },
-            "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj": {
-              "projectPath": "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj"
             }
           }
         }

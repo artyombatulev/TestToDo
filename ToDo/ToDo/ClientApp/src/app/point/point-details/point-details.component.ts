@@ -61,6 +61,8 @@ export class PointDetailsComponent implements OnInit {
                 this.dataSource.data = this.todo.points;
                 this.filterPoints(this.filtre);
                 this.checkTodo();
+                this.dataSource.sort = this.sort;
+                this.dataSource.paginator = this.paginator;
             });
     }
 

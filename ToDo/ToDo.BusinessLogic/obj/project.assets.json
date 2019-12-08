@@ -1939,7 +1939,6 @@
       "path": "runtime.native.system/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -2043,7 +2042,6 @@
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3308,7 +3306,6 @@
       "path": "system.reflection.emit.lightweight/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4253,7 +4250,6 @@
       "path": "system.threading.tasks.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
@@ -4341,7 +4337,6 @@
       "path": "system.xml.xmldocument/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4381,8 +4376,8 @@
     },
     "ToDo.Persistence/1.0.0": {
       "type": "project",
-      "path": "../ToDoPersistence/ToDo.Persistence.csproj",
-      "msbuildProject": "../ToDoPersistence/ToDo.Persistence.csproj"
+      "path": "../ToDo.Persistence/ToDo.Persistence.csproj",
+      "msbuildProject": "../ToDo.Persistence/ToDo.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4399,11 +4394,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj",
+      "projectUniqueName": "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj",
       "projectName": "ToDo.BusinessLogic",
-      "projectPath": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj",
+      "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj",
       "packagesPath": "C:\\Users\\artyo\\.nuget\\packages\\",
-      "outputPath": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\obj\\",
+      "outputPath": "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4422,8 +4417,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj": {
-              "projectPath": "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj"
+            "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj": {
+              "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj"
             }
           }
         }

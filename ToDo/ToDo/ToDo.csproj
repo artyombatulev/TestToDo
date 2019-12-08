@@ -38,8 +38,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ToDo.BusinessLogic\ToDo.BusinessLogic.csproj" />
     <ProjectReference Include="..\ToDo.Common\ToDo.Common.csproj" />
-    <ProjectReference Include="..\ToDoBusinessLogic\ToDo.BusinessLogic.csproj" />
   </ItemGroup>
 
   <ItemGroup>

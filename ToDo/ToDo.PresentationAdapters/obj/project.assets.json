@@ -4401,8 +4401,8 @@
     },
     "ToDo.BusinessLogic/1.0.0": {
       "type": "project",
-      "path": "../ToDoBusinessLogic/ToDo.BusinessLogic.csproj",
-      "msbuildProject": "../ToDoBusinessLogic/ToDo.BusinessLogic.csproj"
+      "path": "../ToDo.BusinessLogic/ToDo.BusinessLogic.csproj",
+      "msbuildProject": "../ToDo.BusinessLogic/ToDo.BusinessLogic.csproj"
     },
     "ToDo.DataAccessModels/1.0.0": {
       "type": "project",
@@ -4411,8 +4411,8 @@
     },
     "ToDo.Persistence/1.0.0": {
       "type": "project",
-      "path": "../ToDoPersistence/ToDo.Persistence.csproj",
-      "msbuildProject": "../ToDoPersistence/ToDo.Persistence.csproj"
+      "path": "../ToDo.Persistence/ToDo.Persistence.csproj",
+      "msbuildProject": "../ToDo.Persistence/ToDo.Persistence.csproj"
     },
     "ToDo.ViewModels/1.0.0": {
       "type": "project",
@@ -4425,7 +4425,6 @@
       "AutoMapper >= 9.0.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "ToDo.BusinessLogic >= 1.0.0",
-      "ToDo.DataAccessModels >= 1.0.0",
       "ToDo.ViewModels >= 1.0.0"
     ]
   },
@@ -4459,14 +4458,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "E:\\ToDoTest\\ToDo\\ToDo.DataAccessModels\\ToDo.DataAccessModels.csproj": {
-              "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.DataAccessModels\\ToDo.DataAccessModels.csproj"
+            "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj": {
+              "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj"
             },
             "E:\\ToDoTest\\ToDo\\ToDo.ViewModels\\ToDo.ViewModels.csproj": {
               "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.ViewModels\\ToDo.ViewModels.csproj"
-            },
-            "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj": {
-              "projectPath": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj"
             }
           }
         }

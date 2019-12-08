@@ -10,7 +10,6 @@
         "dependencies": {
           "AutoMapper": "9.0.0",
           "ToDo.BusinessLogic": "1.0.0",
-          "ToDo.DataAccessModels": "1.0.0",
           "ToDo.ViewModels": "1.0.0"
         },
         "runtime": {

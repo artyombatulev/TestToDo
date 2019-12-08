@@ -1154,7 +1154,6 @@
         "dependencies": {
           "AutoMapper": "9.0.0",
           "ToDo.BusinessLogic": "1.0.0",
-          "ToDo.DataAccessModels": "1.0.0",
           "ToDo.ViewModels": "1.0.0"
         },
         "compile": {
@@ -1978,7 +1977,6 @@
       "path": "runtime.native.system/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -2082,7 +2080,6 @@
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3349,7 +3346,6 @@
       "path": "system.reflection.emit.lightweight/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4294,7 +4290,6 @@
       "path": "system.threading.tasks.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
@@ -4382,7 +4377,6 @@
       "path": "system.xml.xmldocument/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4417,8 +4411,8 @@
     },
     "ToDo.BusinessLogic/1.0.0": {
       "type": "project",
-      "path": "../ToDoBusinessLogic/ToDo.BusinessLogic.csproj",
-      "msbuildProject": "../ToDoBusinessLogic/ToDo.BusinessLogic.csproj"
+      "path": "../ToDo.BusinessLogic/ToDo.BusinessLogic.csproj",
+      "msbuildProject": "../ToDo.BusinessLogic/ToDo.BusinessLogic.csproj"
     },
     "ToDo.DataAccessModels/1.0.0": {
       "type": "project",
@@ -4427,8 +4421,8 @@
     },
     "ToDo.Persistence/1.0.0": {
       "type": "project",
-      "path": "../ToDoPersistence/ToDo.Persistence.csproj",
-      "msbuildProject": "../ToDoPersistence/ToDo.Persistence.csproj"
+      "path": "../ToDo.Persistence/ToDo.Persistence.csproj",
+      "msbuildProject": "../ToDo.Persistence/ToDo.Persistence.csproj"
     },
     "ToDo.PresentationAdapters/1.0.0": {
       "type": "project",

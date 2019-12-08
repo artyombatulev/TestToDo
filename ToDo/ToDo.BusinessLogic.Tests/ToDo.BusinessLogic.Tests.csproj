@@ -15,9 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ToDo.BusinessLogic\ToDo.BusinessLogic.csproj" />
+    <ProjectReference Include="..\ToDo.Persistence\ToDo.Persistence.csproj" />
     <ProjectReference Include="..\ToDo.Tests.Core\ToDo.Tests.Core.csproj" />
-    <ProjectReference Include="..\ToDoBusinessLogic\ToDo.BusinessLogic.csproj" />
-    <ProjectReference Include="..\ToDoPersistence\ToDo.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

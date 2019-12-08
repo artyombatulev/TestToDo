@@ -58,6 +58,8 @@ export class TodoComponent implements OnInit, AfterViewInit {
                 this.dataSource.data = res as Todo[];
                 this.filterTodos(this.filtre);
                 this.checkTodos();
+                this.dataSource.sort = this.sort;
+                this.dataSource.paginator = this.paginator;
             });
     }
 

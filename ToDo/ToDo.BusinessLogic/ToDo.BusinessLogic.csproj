@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ToDoPersistence\ToDo.Persistence.csproj" />
+    <ProjectReference Include="..\ToDo.Persistence\ToDo.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

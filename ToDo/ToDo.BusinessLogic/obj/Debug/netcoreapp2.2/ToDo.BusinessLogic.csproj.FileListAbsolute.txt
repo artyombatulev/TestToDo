@@ -38,3 +38,16 @@ E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.As
 E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.csproj.CopyComplete
 E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
 E:\ToDoTest\ToDo\ToDoBusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.deps.json
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\bin\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\bin\Debug\netcoreapp2.2\ToDo.Persistence.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\bin\Debug\netcoreapp2.2\ToDo.Persistence.pdb
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\bin\Debug\netcoreapp2.2\ToDo.DataAccessModels.pdb
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.csprojAssemblyReference.cache
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.AssemblyInfoInputs.cache
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.AssemblyInfo.cs
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.csproj.CopyComplete
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.dll
+E:\ToDoTest\ToDo\ToDo.BusinessLogic\obj\Debug\netcoreapp2.2\ToDo.BusinessLogic.pdb

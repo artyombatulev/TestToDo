@@ -4,6 +4,72 @@
     "E:\\ToDoTest\\ToDo\\Todo.Controller.Tests\\ToDo.Controller.Tests.csproj": {}
   },
   "projects": {
+    "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj",
+        "projectName": "ToDo.BusinessLogic",
+        "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\artyo\\.nuget\\packages\\",
+        "outputPath": "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj": {
+                "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "E:\\ToDoTest\\ToDo\\ToDo.Common\\ToDo.Common.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -87,17 +153,20 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.0"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.0": {
+          "netcoreapp2.2": {
             "projectReferences": {
               "E:\\ToDoTest\\ToDo\\ToDo.PresentationAdapters\\ToDo.PresentationAdapters.csproj": {
                 "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.PresentationAdapters\\ToDo.PresentationAdapters.csproj"
+              },
+              "E:\\ToDoTest\\ToDo\\ToDo.Tests.Core\\ToDo.Tests.Core.csproj": {
+                "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.Tests.Core\\ToDo.Tests.Core.csproj"
               },
               "E:\\ToDoTest\\ToDo\\ToDo.ViewModels\\ToDo.ViewModels.csproj": {
                 "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.ViewModels\\ToDo.ViewModels.csproj"
@@ -115,11 +184,21 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
             },
             "Moq": {
               "target": "Package",
@@ -148,14 +227,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
@@ -218,6 +289,76 @@
         }
       }
     },
+    "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj",
+        "projectName": "ToDo.Persistence",
+        "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj",
+        "packagesPath": "C:\\Users\\artyo\\.nuget\\packages\\",
+        "outputPath": "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "E:\\ToDoTest\\ToDo\\ToDo.DataAccessModels\\ToDo.DataAccessModels.csproj": {
+                "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.DataAccessModels\\ToDo.DataAccessModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "E:\\ToDoTest\\ToDo\\ToDo.PresentationAdapters\\ToDo.PresentationAdapters.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -244,14 +385,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "E:\\ToDoTest\\ToDo\\ToDo.DataAccessModels\\ToDo.DataAccessModels.csproj": {
-                "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.DataAccessModels\\ToDo.DataAccessModels.csproj"
+              "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj": {
+                "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj"
               },
               "E:\\ToDoTest\\ToDo\\ToDo.ViewModels\\ToDo.ViewModels.csproj": {
                 "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.ViewModels\\ToDo.ViewModels.csproj"
-              },
-              "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj": {
-                "projectPath": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj"
               }
             }
           }
@@ -274,6 +412,76 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\ToDoTest\\ToDo\\ToDo.Tests.Core\\ToDo.Tests.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ToDoTest\\ToDo\\ToDo.Tests.Core\\ToDo.Tests.Core.csproj",
+        "projectName": "ToDo.Tests.Core",
+        "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.Tests.Core\\ToDo.Tests.Core.csproj",
+        "packagesPath": "C:\\Users\\artyo\\.nuget\\packages\\",
+        "outputPath": "E:\\ToDoTest\\ToDo\\ToDo.Tests.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\artyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "E:\\ToDoTest\\ToDo\\ToDo.DataAccessModels\\ToDo.DataAccessModels.csproj": {
+                "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.DataAccessModels\\ToDo.DataAccessModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.13.1, )"
             }
           },
           "imports": [
@@ -348,142 +556,6 @@
         }
       }
     },
-    "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj",
-        "projectName": "ToDo.BusinessLogic",
-        "projectPath": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj",
-        "packagesPath": "C:\\Users\\artyo\\.nuget\\packages\\",
-        "outputPath": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\artyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.2"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.2": {
-            "projectReferences": {
-              "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj": {
-                "projectPath": "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.2": {
-          "dependencies": {
-            "AutoMapper": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj",
-        "projectName": "ToDo.Persistence",
-        "projectPath": "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj",
-        "packagesPath": "C:\\Users\\artyo\\.nuget\\packages\\",
-        "outputPath": "E:\\ToDoTest\\ToDo\\ToDoPersistence\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\artyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.2"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.2": {
-            "projectReferences": {
-              "E:\\ToDoTest\\ToDo\\ToDo.DataAccessModels\\ToDo.DataAccessModels.csproj": {
-                "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.DataAccessModels\\ToDo.DataAccessModels.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.2": {
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[2.2.6, )"
-            },
-            "Microsoft.EntityFrameworkCore.Proxies": {
-              "target": "Package",
-              "version": "[2.2.6, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "E:\\ToDoTest\\ToDo\\ToDo\\ToDo.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -510,11 +582,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
+              "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj": {
+                "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.BusinessLogic\\ToDo.BusinessLogic.csproj"
+              },
               "E:\\ToDoTest\\ToDo\\ToDo.Common\\ToDo.Common.csproj": {
                 "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.Common\\ToDo.Common.csproj"
-              },
-              "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj": {
-                "projectPath": "E:\\ToDoTest\\ToDo\\ToDoBusinessLogic\\ToDo.BusinessLogic.csproj"
               }
             }
           }

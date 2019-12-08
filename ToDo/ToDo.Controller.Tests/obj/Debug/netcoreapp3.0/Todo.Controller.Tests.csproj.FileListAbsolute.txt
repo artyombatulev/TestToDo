@@ -145,3 +145,5 @@ E:\ToDoTest\ToDo\Todo.Controller.Tests\bin\Debug\netcoreapp3.0\ToDo.pdb
 E:\ToDoTest\ToDo\Todo.Controller.Tests\bin\Debug\netcoreapp3.0\ToDo.Common.pdb
 E:\ToDoTest\ToDo\Todo.Controller.Tests\obj\Debug\netcoreapp3.0\Todo.Controller.Tests.dll
 E:\ToDoTest\ToDo\Todo.Controller.Tests\obj\Debug\netcoreapp3.0\Todo.Controller.Tests.pdb
+E:\ToDoTest\ToDo\Todo.Controller.Tests\bin\Debug\netcoreapp3.0\ToDo.Tests.Core.dll
+E:\ToDoTest\ToDo\Todo.Controller.Tests\bin\Debug\netcoreapp3.0\ToDo.Tests.Core.pdb

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj": {}
+    "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj": {}
   },
   "projects": {
     "E:\\ToDoTest\\ToDo\\ToDo.DataAccessModels\\ToDo.DataAccessModels.csproj": {
@@ -62,14 +62,14 @@
         }
       }
     },
-    "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj": {
+    "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj",
+        "projectUniqueName": "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj",
         "projectName": "ToDo.Persistence",
-        "projectPath": "E:\\ToDoTest\\ToDo\\ToDoPersistence\\ToDo.Persistence.csproj",
+        "projectPath": "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\ToDo.Persistence.csproj",
         "packagesPath": "C:\\Users\\artyo\\.nuget\\packages\\",
-        "outputPath": "E:\\ToDoTest\\ToDo\\ToDoPersistence\\obj\\",
+        "outputPath": "E:\\ToDoTest\\ToDo\\ToDo.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
